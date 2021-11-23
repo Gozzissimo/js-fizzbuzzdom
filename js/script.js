@@ -14,3 +14,14 @@
 // note personali:
 // Trovare una logica che mi indichi evidenzi quali numeri sono divisibili per 3, per 5 e per tutti e due.
 // Io direi di prendere quei numeri che divisi per 3,5 o tutti e due mi diano resto 0.
+
+// costanti
+const container = document.querySelector('.container');
+
+// calcolo
+for (let i = 1; i <= 100; i++) {
+console.log(i);
+    if ((i % 3) == 0){
+        i = 'fizz';
+    }
+}
