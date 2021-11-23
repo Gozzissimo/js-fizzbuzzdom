@@ -1,5 +1,49 @@
-html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #083B4C;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin: 50px;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+.fizz {
+    background-color: green;
+}
+
+.buzz {
+    background-color: bisque;
+}
+
+.fizzbuzz {
+    background-color: tomato;
 }

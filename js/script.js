@@ -15,19 +15,35 @@
 // Trovare una logica che mi indichi evidenzi quali numeri sono divisibili per 3, per 5 e per tutti e due.
 // Io direi di prendere quei numeri che divisi per 3,5 o tutti e due mi diano resto 0.
 
-// costanti
+// costante fissa
 const container = document.querySelector('.container');
-const div = document.querySelector('.div');
+
 
 // calcolo
 for (let i = 1; i <= 100; i++) {
+
+    const div = document.createElement('div');
+    div.classList.add('box');
+
     if (i % 3 == 0 && i % 5 == 0) {
-        console.log('fizzbuzz');
+        // console.log('fizzbuzz');
+        div.classList.add('fizzbuzz');
+        div.innerHTML = ('fizzbuzz');
+
     } else if (i % 5 == 0) {
-        console.log('buzz');
+        // console.log('buzz');
+        div.classList.add('buzz');
+        div.innerHTML = ('buzz');
+
     } else if (i % 3 == 0) {
-        console.log('fizz');
+        // console.log('fizz');
+        div.classList.add('fizz');
+        div.innerHTML = ('fizz');
+
     } else {
-        console.log(i);
+        // console.log(i);
+        div.innerHTML = (i)
     }
+    
+    container.append(div)
 }
