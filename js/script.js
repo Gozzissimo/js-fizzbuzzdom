@@ -18,7 +18,6 @@
 // costante fissa
 const container = document.querySelector('.container');
 
-
 // calcolo
 for (let i = 1; i <= 100; i++) {
 
@@ -42,8 +41,8 @@ for (let i = 1; i <= 100; i++) {
 
     } else {
         // console.log(i);
-        div.innerHTML = (i)
+        div.innerHTML = (i);
     }
-    
-    container.append(div)
+
+    container.append(div);
 }
